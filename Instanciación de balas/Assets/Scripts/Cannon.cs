@@ -9,17 +9,10 @@ public class Cannon : MonoBehaviour
     void Start()
     {
         InvokeRepeating("Clone", 0, 1f);
-        
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-            
-    }
     void Clone()
     {
-        Instantiate(bullet,new Vector3(0, 0, 0),new Quaternion());
-        //Instantiate(bullet, transform);
+        Instantiate(bullet);
     }
 }
