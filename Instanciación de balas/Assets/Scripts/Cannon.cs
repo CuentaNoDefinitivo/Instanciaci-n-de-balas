@@ -8,10 +8,10 @@ public class Cannon : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("Clone", 0, 1f);
+        InvokeRepeating("Disparo", 0, 1f);
     }
 
-    void Clone()
+    void Disparo()
     {
         Instantiate(bullet);
     }
